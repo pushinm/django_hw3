@@ -1,0 +1,8 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+    {% for login in logins %}
+        <div class="em_div">
+            <h2>{{login.login}} - {{login.employee}}</h2>
+        </div>
+    {% endfor %}
+{% endblock content %}

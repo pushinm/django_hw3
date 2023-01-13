@@ -1,0 +1,10 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+    {% for e in employee %}
+        <div class="em_div">
+            <h2>{{e.first_name}} {{e.last_name}}</h2>
+            <p>Должность: {{e.job}}</p>
+            <p>Возраст: {{e.age}}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
